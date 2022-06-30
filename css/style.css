@@ -20,6 +20,8 @@ a {
 .nav-container {
   width: 100%;
   color: #fff;
+  padding-top: 20px;
+  margin-left: 24px;
 }
 
 .navbar-list {
@@ -30,7 +32,6 @@ a {
 }
 
 .name1 {
-  padding-top: 8px;
   font-size: 18px;
 }
 
@@ -60,14 +61,13 @@ a {
 
 .name2 {
   height: 55px;
-  margin-bottom: 12px;
   margin-top: 63px;
 }
 
 .name2 h1 {
   color: #7d73fc;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 38px;
 }
 
 .occupation {
@@ -83,7 +83,7 @@ a {
 .description {
   width: 290px;
   height: 170px;
-  margin-bottom: 33px;
+  margin: 0 0 33px;
 }
 
 .description p {
@@ -98,7 +98,6 @@ a {
 .skills-list {
   height: 527.15px;
   width: 375px;
-  width: 100%;
   display: flex;
   justify-content: flex-start;
 }
@@ -106,7 +105,7 @@ a {
 .frameworks {
   width: 140px;
   height: 16px;
-  margin-left: 50px;
+  margin-left: 25px;
 }
 
 .language {
@@ -136,7 +135,7 @@ a {
 
 .ellipse2 {
   background-image: url('../images/Ellipse-2.svg');
-  margin-left: 190px;
+  margin-left: 181px;
   width: 68px;
   height: 68px;
   background-size: contain;
