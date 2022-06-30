@@ -121,13 +121,11 @@ a {
   font-size: 12px;
   padding-bottom: 24.5px;
   margin-left: 44px;
-  margin-bottom: 24.5px;
 }
 
 .language ul li,
 .skills ul li,
 .frameworks ul li {
-  margin-left: 10px;
   color: #f5f5ff;
   font-size: 15px;
   margin-bottom: 19.11px;
@@ -135,7 +133,7 @@ a {
 
 .ellipse2 {
   background-image: url('../images/Ellipse-2.svg');
-  margin-left: 181px;
+  margin-left: 183px;
   width: 68px;
   height: 68px;
   background-size: contain;
