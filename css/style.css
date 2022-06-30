@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+}
+
+body {
+  background: #191765;
+  font-family: ('Roboto' sans-serif);
+  font-style: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-container {
+  width: 100%;
+  color: #fff;
+  padding-top: 20px;
+  margin-left: 24px;
+}
+
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.name1 {
+  font-size: 18px;
+}
+
+.hamburger-menu {
+  margin-right: 40.33px;
+  font-size: 30px;
+}
+
+.content {
+  flex-basis: 100%;
+  height: 424.58px;
+  display: flex;
+}
+
+.ellipse {
+  align-self: flex-start;
+  width: 40px;
+  height: 160px;
+}
+
+.name2,
+.occupation,
+.description {
+  padding-bottom: 12px;
+  margin-left: 24px;
+}
+
+.name2 {
+  height: 55px;
+  margin-top: 63px;
+}
+
+.name2 h1 {
+  color: #7d73fc;
+  font-weight: 700;
+  font-size: 38px;
+}
+
+.occupation {
+  height: 87px;
+}
+
+.occupation h2 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #edecff;
+}
+
+.description {
+  width: 290px;
+  height: 170px;
+  margin: 0 0 33px;
+}
+
+.description p {
+  width: 100%;
+  text-align: center;
+  line-height: 28px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #c8c8d4;
+}
+
+.skills-list {
+  height: 527.15px;
+  width: 375px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.frameworks {
+  width: 140px;
+  height: 16px;
+  margin-left: 25px;
+}
+
+.language {
+  margin-bottom: 83.3px;
+}
+
+.language h3,
+.skills h3,
+.frameworks h3 {
+  width: 104.12px;
+  color: #7d73fc;
+  font-weight: 500;
+  font-size: 12px;
+  padding-bottom: 24.5px;
+  margin-left: 44px;
+}
+
+.language ul li,
+.skills ul li,
+.frameworks ul li {
+  color: #f5f5ff;
+  font-size: 15px;
+  margin-bottom: 19.11px;
+}
+
+.ellipse2 {
+  background-image: url('../images/Ellipse-2.svg');
+  margin-left: 183px;
+  width: 68px;
+  height: 68px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contact {
+  width: 100%;
+}
+
+.contact-list {
+  margin-top: 99px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 38px;
+  text-align: center;
+  margin-left: 94px;
+  margin-right: 97.5px;
+}
+
+.contact ul i {
+  font-size: 24px;
+  color: white;
+  height: 20px;
+}
+
+@media (min-width: 375px) {
+  body {
+    background-color: white;
+  }
+
+  .nav-container {
+    display: none;
+  }
+
+  .skills-list {
+    display: none;
+  }
+
+  .header-container {
+    display: none;
+  }
+
+  .contact {
+    display: none;
+  }
+}
