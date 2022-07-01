@@ -4,7 +4,7 @@
 
 body {
   background: #191765;
-  font-family: ('Roboto' sans-serif);
+  font-family: 'Inter', sans-serif;
   font-style: normal;
 }
 
@@ -16,6 +16,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+
+/* nav section */
 
 .nav-container {
   width: 100%;
@@ -39,6 +42,9 @@ a {
   margin-right: 40.33px;
   font-size: 30px;
 }
+
+
+/* header container */
 
 .content {
   flex-basis: 100%;
@@ -83,7 +89,7 @@ a {
 .description {
   width: 290px;
   height: 170px;
-  margin: 0 0 33px;
+  margin-bottom: 33px;
 }
 
 .description p {
@@ -94,6 +100,9 @@ a {
   font-size: 20px;
   color: #c8c8d4;
 }
+
+
+/* language section */
 
 .skills-list {
   height: 527.15px;
@@ -140,6 +149,9 @@ a {
   background-repeat: no-repeat;
 }
 
+
+/* contact section */
+
 .contact {
   width: 100%;
 }
@@ -148,9 +160,7 @@ a {
   margin-top: 99px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 38px;
-  text-align: center;
-  margin-left: 94px;
+  margin-left: 50px;
   margin-right: 97.5px;
 }
 
@@ -158,6 +168,209 @@ a {
   font-size: 24px;
   color: white;
   height: 20px;
+}
+
+
+/* work section */
+
+.work-title {
+  width: 327px;
+  height: 104px;
+  margin: 0 24px;
+  color: #7d73fc;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 33px;
+}
+
+.line {
+  border: 1px solid #646369;
+  width: 327px;
+  margin: 33px;
+  margin-left: 24px;
+  margin-bottom: 37.33px;
+}
+
+.grid-container {
+  grid-template-areas: 'item1 item1 item1 item1' 'item2 item2 item2 item2' 'item3 item3 item3 item3' 'item4 item4 item4 item4';
+  height: 613px;
+  width: 327px;
+  margin-top: 48px;
+  margin-left: 24px;
+  margin-bottom: 34px;
+}
+
+.grid-item1 {
+  grid-area: item1;
+  background-color: #f9f9f9;
+  height: 236px;
+  margin-bottom: 24px;
+}
+
+.grid-item2 {
+  grid-area: item2;
+  height: 105px;
+}
+
+.grid-item2 h2 {
+  color: white;
+  font-weight: 500;
+  font-size: 32px;
+  margin-right: 12px;
+}
+
+.grid-item3 {
+  grid-area: item3;
+  height: 220px;
+}
+
+.grid-item3 p {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.grid-item4 {
+  grid-area: item4;
+  height: 40px;
+}
+
+.grid-item4 ul {
+  display: flex;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.grid-item4 ul li {
+  border-right: 1px solid #555;
+  padding: 10px;
+}
+
+.grid-item4 ul li:last-child {
+  border-right: none;
+}
+
+.button2,
+.button1 {
+  padding: 20px;
+  background-color: #7d73fc;
+  color: white;
+}
+
+.button1 {
+  margin-left: 24px;
+  margin-bottom: 40px;
+}
+
+.button2 {
+  margin-left: 143px;
+  margin-bottom: 97px;
+  margin-top: 40px;
+}
+
+.button2:hover,
+.button1:hover {
+  background-color: #555;
+}
+
+
+/* contact-us style */
+
+.contact-title {
+  width: 327px;
+  height: 35px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.contact-title h2 {
+  color: #7d73fc;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+}
+
+.Contact-description {
+  width: 327px;
+  height: 105px;
+  margin: 24px 24px 40px;
+}
+
+.Contact-description p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0 2px;
+  color: #c8c8d4;
+}
+
+form .text-input input {
+  height: 48px;
+  width: 327px;
+  margin: 24px;
+}
+
+form .emails input {
+  width: 327px;
+  height: 48px;
+  margin: 24px;
+  color: black;
+}
+
+form .textarea textarea {
+  width: 327px;
+  margin: 24px;
+  height: 148px;
+}
+
+.contact ul {
+  margin-bottom: 9px;
+}
+
+.my-email {
+  margin-bottom: 40px;
+  margin-left: 76px;
+  margin-right: 78px;
+  width: 221px;
+  height: 29px;
+}
+
+.my-email p {
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+}
+
+
+/* Ellipse for work */
+
+.work-portofolio-1,
+.work-portofolio-2,
+.work-portofolio-3,
+.work-portofolio-4 {
+  width: 375px;
+  background-repeat: no-repeat;
+}
+
+.work-portofolio-1 {
+  background-image: url('../images/Ellipse-3.svg');
+  background-position: left;
+}
+
+.work-portofolio-2 {
+  background-image: url('../images/Ellipse-4.svg');
+  background-position: right;
+}
+
+.work-portofolio-3 {
+  background-image: url('../images/Ellipse-5.svg');
+  background-position: left;
+}
+
+.work-portofolio-4 {
+  background-image: url('../images/Ellipse-6.svg');
+  background-position: right;
 }
 
 @media (min-width: 375px) {
@@ -174,6 +387,14 @@ a {
   }
 
   .header-container {
+    display: none;
+  }
+
+  .work {
+    display: none;
+  }
+
+  .Contact-Us {
     display: none;
   }
 
