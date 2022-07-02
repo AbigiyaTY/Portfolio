@@ -4,7 +4,7 @@
 
 body {
   background: #191765;
-  font-family: ('Roboto' sans-serif);
+  font-family: 'Inter', sans-serif;
   font-style: normal;
 }
 
@@ -46,22 +46,17 @@ a {
   display: flex;
 }
 
-.ellipse {
-  align-self: flex-start;
-  width: 40px;
-  height: 160px;
-}
-
 .name2,
 .occupation,
 .description {
   padding-bottom: 12px;
-  margin-left: 24px;
+  margin-left: 12px;
 }
 
 .name2 {
   height: 55px;
-  margin-top: 63px;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 .name2 h1 {
@@ -83,7 +78,6 @@ a {
 .description {
   width: 290px;
   height: 170px;
-  margin: 0 0 33px;
 }
 
 .description p {
@@ -91,11 +85,12 @@ a {
   text-align: center;
   line-height: 28px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
   color: #c8c8d4;
 }
 
 .skills-list {
+  margin-top: 37.3px;
   height: 527.15px;
   width: 375px;
   display: flex;
@@ -131,9 +126,16 @@ a {
   margin-bottom: 19.11px;
 }
 
+.header-container-top {
+  background-image: url('../images/Ellipse-1.svg');
+  width: 375px;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
 .ellipse2 {
   background-image: url('../images/Ellipse-2.svg');
-  margin-left: 183px;
+  margin-left: 270px;
   width: 68px;
   height: 68px;
   background-size: contain;
@@ -148,9 +150,7 @@ a {
   margin-top: 99px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 38px;
-  text-align: center;
-  margin-left: 94px;
+  margin-left: 50px;
   margin-right: 97.5px;
 }
 
@@ -160,7 +160,276 @@ a {
   height: 20px;
 }
 
-@media (min-width: 375px) {
+.work-title {
+  width: 327px;
+  height: 104px;
+  margin: 0 24px;
+  color: #7d73fc;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 33px;
+}
+
+.header-container {
+  margin-bottom: 80px;
+  margin-left: 40px;
+}
+
+.line {
+  border: 1px solid #646369;
+  width: 327px;
+  margin-left: 24px;
+}
+
+.grid-container {
+  grid-template-areas: 'item1 item1 item1 item1' 'item2 item2 item2 item2' 'item3 item3 item3 item3' 'item4 item4 item4 item4';
+  height: 613px;
+  width: 327px;
+  margin-top: 48px;
+  margin-left: 24px;
+  margin-bottom: 34px;
+}
+
+.grid-item1 {
+  grid-area: item1;
+  background-color: #f9f9f9;
+  height: 236px;
+  margin-bottom: 24px;
+}
+
+.grid-item2 {
+  grid-area: item2;
+  height: 105px;
+}
+
+.grid-item2 h2 {
+  color: white;
+  font-weight: 500;
+  font-size: 32px;
+  margin-right: 12px;
+}
+
+.grid-item3 {
+  grid-area: item3;
+  height: 220px;
+}
+
+.grid-item3 p {
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.grid-item4 {
+  grid-area: item4;
+  height: 40px;
+}
+
+.grid-item4 ul {
+  display: flex;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.grid-item4 ul li {
+  border-right: 1px solid #555;
+  padding: 10px;
+}
+
+.grid-item4 ul li:last-child {
+  border-right: none;
+}
+
+.button2,
+.button1 {
+  padding: 20px;
+  background-color: #7d73fc;
+  color: white;
+}
+
+.button1 {
+  margin-left: 24px;
+  margin-bottom: 40px;
+}
+
+.button2 {
+  margin-left: 143px;
+  margin-bottom: 97px;
+  margin-top: 40px;
+}
+
+.button2:hover,
+.button1:hover {
+  background-color: #555;
+}
+
+.contact-title {
+  width: 327px;
+  height: 35px;
+  margin-right: 24px;
+  margin-left: 24px;
+  margin-bottom: 24px;
+}
+
+.contact-title h2 {
+  color: #7d73fc;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+}
+
+.Contact-description {
+  width: 327px;
+  height: 105px;
+  margin: 24px 24px 40px;
+}
+
+.Contact-description p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 0 2px;
+  color: #c8c8d4;
+}
+
+form .text-input input {
+  height: 48px;
+  width: 327px;
+  margin: 24px;
+}
+
+form .emails input {
+  width: 327px;
+  height: 48px;
+  margin: 24px;
+  color: black;
+}
+
+form .textarea textarea {
+  width: 327px;
+  margin: 24px;
+  height: 148px;
+}
+
+.contact ul {
+  margin-bottom: 9px;
+}
+
+.my-email {
+  margin-bottom: 40px;
+  margin-left: 76px;
+  margin-right: 78px;
+  width: 221px;
+  height: 29px;
+}
+
+.my-email p {
+  font-weight: 400;
+  font-size: 20px;
+  color: white;
+}
+
+.work-portofolio-1,
+.work-portofolio-2,
+.work-portofolio-3,
+.work-portofolio-4 {
+  width: 375px;
+  background-repeat: no-repeat;
+}
+
+.work-portofolio-1 {
+  background-image: url('../images/Ellipse-3.svg');
+  background-position: left;
+}
+
+.work-portofolio-2 {
+  background-image: url('../images/Ellipse-4.svg');
+  background-position: right;
+}
+
+.work-portofolio-3 {
+  background-image: url('../images/Ellipse-5.svg');
+  background-position: left;
+}
+
+.work-portofolio-4 {
+  background-image: url('../images/Ellipse-6.svg');
+  background-position: right;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+  .header-container {
+    margin-left: 60px;
+  }
+
+  .name2,
+  .occupation,
+  .description {
+    margin-left: 0;
+  }
+
+  .lang-skill {
+    margin-left: 16px;
+  }
+
+  .frameworks {
+    margin-left: 70px;
+  }
+
+  .ellipse2 {
+    margin-left: 270px;
+  }
+
+  .line {
+    width: 370px;
+    margin-left: 30px;
+  }
+
+  .skills-list {
+    width: 480px;
+  }
+
+  .header-container-top,
+  .work-portofolio-1,
+  .work-portofolio-2,
+  .work-portofolio-3,
+  .work-portofolio-4 {
+    width: 480px;
+  }
+
+  .button1 {
+    margin-left: 53px;
+  }
+
+  .button2 {
+    margin-left: 143px;
+  }
+
+  .grid-container,
+  .contact-title,
+  form .text-input input,
+  form .emails input,
+  form .textarea textarea {
+    width: 300px;
+    margin: 24px 53px;
+  }
+
+  .Contact-description {
+    margin-left: 53px;
+  }
+
+  .my-email {
+    margin-left: 120px;
+  }
+
+  .contact-list {
+    margin-left: 80px;
+    margin-right: 130px;
+  }
+}
+
+@media (min-width: 480px) {
   body {
     background-color: white;
   }
@@ -174,6 +443,14 @@ a {
   }
 
   .header-container {
+    display: none;
+  }
+
+  .work {
+    display: none;
+  }
+
+  .Contact-Us {
     display: none;
   }
 
