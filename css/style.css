@@ -46,22 +46,17 @@ a {
   display: flex;
 }
 
-.ellipse {
-  align-self: flex-start;
-  width: 40px;
-  height: 160px;
-}
-
 .name2,
 .occupation,
 .description {
   padding-bottom: 12px;
-  margin-left: 24px;
+  margin-left: 12px;
 }
 
 .name2 {
   height: 55px;
-  margin-top: 63px;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 .name2 h1 {
@@ -83,7 +78,6 @@ a {
 .description {
   width: 290px;
   height: 170px;
-  margin-bottom: 33px;
 }
 
 .description p {
@@ -91,11 +85,12 @@ a {
   text-align: center;
   line-height: 28px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
   color: #c8c8d4;
 }
 
 .skills-list {
+  margin-top: 37.3px;
   height: 527.15px;
   width: 375px;
   display: flex;
@@ -131,9 +126,16 @@ a {
   margin-bottom: 19.11px;
 }
 
+.header-container-top {
+  background-image: url('../images/Ellipse-1.svg');
+  width: 375px;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
 .ellipse2 {
   background-image: url('../images/Ellipse-2.svg');
-  margin-left: 183px;
+  margin-left: 270px;
   width: 68px;
   height: 68px;
   background-size: contain;
@@ -168,12 +170,15 @@ a {
   margin-bottom: 33px;
 }
 
+.header-container {
+  margin-bottom: 80px;
+  margin-left: 40px;
+}
+
 .line {
   border: 1px solid #646369;
   width: 327px;
-  margin: 33px;
   margin-left: 24px;
-  margin-bottom: 37.33px;
 }
 
 .grid-container {
@@ -264,6 +269,7 @@ a {
   height: 35px;
   margin-right: 24px;
   margin-left: 24px;
+  margin-bottom: 24px;
 }
 
 .contact-title h2 {
@@ -352,7 +358,78 @@ form .textarea textarea {
   background-position: right;
 }
 
-@media (min-width: 375px) {
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+  .header-container {
+    margin-left: 60px;
+  }
+
+  .name2,
+  .occupation,
+  .description {
+    margin-left: 0;
+  }
+
+  .lang-skill {
+    margin-left: 16px;
+  }
+
+  .frameworks {
+    margin-left: 70px;
+  }
+
+  .ellipse2 {
+    margin-left: 270px;
+  }
+
+  .line {
+    width: 370px;
+    margin-left: 30px;
+  }
+
+  .skills-list {
+    width: 480px;
+  }
+
+  .header-container-top,
+  .work-portofolio-1,
+  .work-portofolio-2,
+  .work-portofolio-3,
+  .work-portofolio-4 {
+    width: 480px;
+  }
+
+  .button1 {
+    margin-left: 53px;
+  }
+
+  .button2 {
+    margin-left: 143px;
+  }
+
+  .grid-container,
+  .contact-title,
+  form .text-input input,
+  form .emails input,
+  form .textarea textarea {
+    width: 300px;
+    margin: 24px 53px;
+  }
+
+  .Contact-description {
+    margin-left: 53px;
+  }
+
+  .my-email {
+    margin-left: 120px;
+  }
+
+  .contact-list {
+    margin-left: 80px;
+    margin-right: 130px;
+  }
+}
+
+@media (min-width: 480px) {
   body {
     background-color: white;
   }
