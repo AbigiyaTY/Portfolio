@@ -195,6 +195,7 @@ a {
   background-color: #f9f9f9;
   height: 236px;
   margin-bottom: 24px;
+  width: 280px;
 }
 
 .grid-item2 {
@@ -254,7 +255,7 @@ a {
 }
 
 .button2 {
-  margin-left: 143px;
+  margin-left: 100px;
   margin-bottom: 97px;
   margin-top: 40px;
 }
@@ -267,8 +268,6 @@ a {
 .contact-title {
   width: 327px;
   height: 35px;
-  margin-right: 24px;
-  margin-left: 24px;
   margin-bottom: 24px;
 }
 
@@ -282,34 +281,14 @@ a {
 .Contact-description {
   width: 327px;
   height: 105px;
-  /*margin: 24px 24px 40px;*/
 }
 
 .Contact-description p {
   text-align: center;
   font-weight: 400;
   font-size: 16px;
-  /*padding: 0 2px;*/
+  padding: 0 2px;
   color: #c8c8d4;
-}
-
-form .text-input input {
-  height: 48px;
-  width: 327px;
-  margin: 24px;
-}
-
-form .emails input {
-  width: 327px;
-  height: 48px;
-  margin: 24px;
-  color: black;
-}
-
-form .textarea textarea {
-  width: 327px;
-  margin: 24px;
-  height: 148px;
 }
 
 .contact ul {
@@ -364,7 +343,20 @@ form .textarea textarea {
   margin: 0 24px;
 }
 
+form input {
+  height: 48px;
+  width: 283px;
+}
 
+form {
+  margin-left: 12px;
+}
+
+#email::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+}
 
 @media only screen and (min-width: 375px) and (max-width: 480px) {
   .header-container {
@@ -410,21 +402,18 @@ form .textarea textarea {
     margin-left: 53px;
   }
 
-  .button2 {
-    margin-left: 143px;
-  }
-
   .grid-container,
-  .contact-title,
-  form .text-input input,
-  form .emails input,
-  form .textarea textarea {
+  .contact-title {
     width: 300px;
-    margin: 24px 53px;
+    margin-left: 30px;
   }
 
   .Contact-description {
-    margin-left: 53px;
+    margin-left: 30px;
+  }
+
+  form {
+    margin-left: 45px;
   }
 
   .my-email {
