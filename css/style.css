@@ -282,14 +282,14 @@ a {
 .Contact-description {
   width: 327px;
   height: 105px;
-  margin: 24px 24px 40px;
+  /*margin: 24px 24px 40px;*/
 }
 
 .Contact-description p {
   text-align: center;
   font-weight: 400;
   font-size: 16px;
-  padding: 0 2px;
+  /*padding: 0 2px;*/
   color: #c8c8d4;
 }
 
@@ -357,6 +357,14 @@ form .textarea textarea {
   background-image: url('../images/Ellipse-6.svg');
   background-position: right;
 }
+
+.Contact-Us {
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px;
+}
+
+
 
 @media only screen and (min-width: 375px) and (max-width: 480px) {
   .header-container {
