@@ -147,7 +147,7 @@ a {
 }
 
 .contact-list {
-  margin-top: 99px;
+  margin-top: 25px;
   display: flex;
   justify-content: space-between;
   margin-left: 50px;
@@ -256,7 +256,7 @@ a {
 
 .button2 {
   margin-left: 100px;
-  margin-bottom: 97px;
+  margin-bottom: 71px;
   margin-top: 40px;
 }
 
@@ -337,13 +337,8 @@ a {
   background-position: right;
 }
 
-.Contact-Us {
-  display: flex;
-  flex-direction: column;
-  margin: 0 24px;
-}
-
-form input {
+form #name,
+form #email {
   height: 48px;
   width: 283px;
 }
@@ -352,13 +347,25 @@ form {
   margin-left: 12px;
 }
 
+.Contact-Us {
+  width: 327px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 24px;
+}
+
 #email::placeholder {
   font-size: 15px;
   font-weight: 400;
   color: rgb(0, 0, 0);
 }
 
-@media only screen and (min-width: 375px) and (max-width: 480px) {
+.lines {
+  border: 1px solid #3a3837;
+  width: 100%;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 450px) {
   .header-container {
     margin-left: 60px;
   }
@@ -382,7 +389,7 @@ form {
   }
 
   .line {
-    width: 370px;
+    width: 340px;
     margin-left: 30px;
   }
 
@@ -402,18 +409,10 @@ form {
     margin-left: 53px;
   }
 
-  .grid-container,
-  .contact-title {
+  .grid-container {
     width: 300px;
-    margin-left: 30px;
-  }
-
-  .Contact-description {
-    margin-left: 30px;
-  }
-
-  form {
-    margin-left: 45px;
+    margin-left: 60px;
+    margin-right: 60px;
   }
 
   .my-email {
@@ -424,9 +423,21 @@ form {
     margin-left: 80px;
     margin-right: 130px;
   }
+
+  .Contact-Us {
+    width: 392.4px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .lines {
+    border: 1px solid #3a3837;
+    width: 100%;
+    margin-bottom: 25px;
+  }
 }
 
-@media (min-width: 480px) {
+@media (min-width: 450px) {
   body {
     background-color: white;
   }
