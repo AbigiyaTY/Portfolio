@@ -429,6 +429,15 @@ form textarea {
   color: white;
 }
 
+
+/* transitioning */
+
+body:hover,
+body:focus {
+  background-color: #000;
+  color: palevioletred;
+}
+
 @media only screen and (min-width: 370px) and (max-width: 760px) {
   html,
   body {
