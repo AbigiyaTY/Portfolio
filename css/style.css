@@ -40,7 +40,7 @@ a {
 .navbar-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .name1 {
@@ -196,7 +196,7 @@ a {
   color: #7d73fc;
   font-weight: 500;
   font-size: 40px;
-  margin: 0 auto 33px;
+  margin: 15px auto 33px;
 }
 
 .button3R,
@@ -311,9 +311,9 @@ a {
 }
 
 .button2 {
-  margin-left: 100px;
+  margin-left: 120px;
   margin-bottom: 71px;
-  margin-top: 40px;
+  margin-top: 27px;
 }
 
 .button2:hover,
@@ -378,6 +378,11 @@ form #name,
 form #email {
   height: 48px;
   width: 332px;
+}
+
+form textarea {
+  width: 332px;
+  height: 160px;
 }
 
 #email::placeholder {
@@ -448,7 +453,7 @@ form #email {
   }
 }
 
-@media only screen and (min-width: 761px) {
+@media only screen and (min-width: 760px) {
   html,
   body {
     margin: 0;
@@ -490,6 +495,7 @@ form #email {
     display: flex;
     justify-content: space-around;
     margin-top: 32px;
+    margin-right: 45px;
   }
 
   .hamburger-list li {
@@ -512,7 +518,6 @@ form #email {
   .lgImg1 {
     display: block;
     margin-top: 91px;
-    flex-grow: 0;
   }
 
   .lgImg1 img {
@@ -522,7 +527,8 @@ form #email {
 
   .header-container {
     width: 691px;
-    margin: 0 25px;
+    margin: 0;
+    flex-direction: column;
   }
 
   .name2 {
@@ -550,60 +556,66 @@ form #email {
   }
 
   .description p {
-    line-height: 28px;
     font-size: 21px;
+    line-height: 38px;
   }
 
   /* Section 2 */
   .line1 {
-    width: 50%;
-    margin-left: 36%;
+    width: 97%;
+    margin-left: 17%;
     margin-top: 40px;
   }
 
   .skills-list {
     width: 100%;
-    margin-left: 14%;
+    margin-left: -16%;
   }
 
   .lang-skill {
     display: flex;
     flex-direction: row;
-    margin-left: 125px;
+    margin-left: 100px;
   }
 
-  .frameworks {
-    margin-left: 0;
+  .frameworks,
+  .skills,
+  .language {
+    margin-left: 40px;
   }
 
   .skillEclips {
     display: flex;
     height: 289px;
+    width: 500px;
   }
 
   .language h3,
   .skills h3,
   .frameworks h3 {
     font-size: 15px;
+    justify-self: 5%;
   }
 
   .language ul li,
   .skills ul li,
   .frameworks ul li {
     font-size: 18px;
+    justify-self: 5%;
   }
 
   .ellipse2 {
     display: none;
   }
 
+  .ecl-frame {
+    display: flex;
+    flex-direction: row;
+  }
+
   .ellipseDS {
-    display: block;
-    background-image: url('/images/lg-img2.svg');
-    background-repeat: no-repeat;
-    width: 226px;
-    height: 226px;
-    background-size: contain;
+    margin-left: 11px;
+    padding-bottom: -80px;
   }
 
   /* worklink section */
@@ -798,7 +810,9 @@ form #email {
   .Contact-description {
     width: 587px;
     margin-left: 4%;
+    margin-top: 2%;
     margin-bottom: 0;
+    line-height: 32px;
   }
 
   form #name,
@@ -879,10 +893,10 @@ form #email {
   }
 
   .hamburger-list {
-    width: 464px;
     display: flex;
     justify-content: space-around;
     margin-top: 32px;
+    margin-right: -185px;
   }
 
   .hamburger-list li {
@@ -915,7 +929,7 @@ form #email {
 
   .header-container {
     width: 691px;
-    margin: 0 25px;
+    margin: 0 9%;
   }
 
   .name2 {
@@ -930,10 +944,11 @@ form #email {
   .occupation {
     height: 100px;
     margin-left: 17%;
+    margin-top: 4%;
   }
 
   .occupation h2 {
-    font-size: 40px;
+    font-size: 39px;
     font-weight: 600;
   }
 
@@ -943,19 +958,19 @@ form #email {
   }
 
   .description p {
-    line-height: 28px;
+    line-height: 35px;
     font-size: 21px;
   }
 
   /* Section 2 */
   .line1 {
-    width: 50%;
-    margin: 40px 0 10px 36%;
+    width: 100%;
+    margin: 40px 0 10px 24%;
   }
 
   .skills-list {
     width: 100%;
-    margin-left: 14%;
+    margin-left: -11%;
   }
 
   .ellipse2 {
@@ -986,6 +1001,12 @@ form #email {
     height: 289px;
   }
 
+  .frameworks,
+  .skills,
+  .language {
+    margin-left: 40px;
+  }
+
   .language h3,
   .skills h3,
   .frameworks h3 {
@@ -1009,7 +1030,7 @@ form #email {
   .workarrow1 {
     display: flex;
     margin-top: 30px;
-    margin-left: 35%;
+    margin-left: 60%;
   }
 
   .workarrow1 i {
@@ -1028,6 +1049,7 @@ form #email {
   /* section 2 work display */
   .work {
     width: 100%;
+    align-items: center;
   }
 
   .work-title {
@@ -1050,7 +1072,6 @@ form #email {
 
   .grid-container {
     display: none;
-    margin: 0;
   }
 
   .grid-container1 {
@@ -1165,13 +1186,13 @@ form #email {
   .Contact-Us {
     width: 100%;
     margin-top: 300px;
-    margin-left: 12%;
+    margin-left: 5%;
   }
 
   .contact-title-LG {
     display: block;
     margin-left: 45px;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 700;
   }
 
