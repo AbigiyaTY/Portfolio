@@ -429,6 +429,49 @@ form textarea {
   color: white;
 }
 
+
+/* transitioning */
+
+body:hover,
+body:focus {
+  background-color: #000;
+  color: palevioletred;
+}
+
+.nameAni {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.nameAni2 {
+  animation-duration: 3s;
+  animation-name: slidein2;
+}
+
+@keyframes slidein2 {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 @media only screen and (min-width: 370px) and (max-width: 760px) {
   html,
   body {
