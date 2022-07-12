@@ -10,7 +10,7 @@ https://abigiyaty.github.io/Portofolio-/
 👤 **Author**
 - GitHub: [@githubhandle](https://github.com/AbigiyaTY)
 - Twitter: [@twitterhandle](https://twitter.com/AbigiyaTY)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abigiya-tadesse-6a0052234)
 
 ## 🤝 Contributing
 
