@@ -114,7 +114,24 @@ a {
 .closeMenu {
     display: inline-block;
 }
-
+.navSpanArrow1,.navSpanArrow2,.navSpanArrow3{
+    color: #ACB7C3;
+    font-size: 20px;
+    font-weight: 400px;
+    align-items: flex-end
+}
+.navSpanArrow1{
+    padding-left: 13rem;
+}
+.navSpanArrow2{
+    padding-left: 15rem;
+}
+.navSpanArrow3{
+    padding-left: 19rem;
+}
+.navSpanArrow4{
+display:none ;
+}
 
 /* Section 1 */
 
