@@ -35,6 +35,7 @@ a {
   width: 100%;
   padding-top: 20px;
   margin-left: 24px;
+  position: fixed;
 }
 
 .navbar-list {
@@ -54,6 +55,60 @@ a {
 
 .hamburger-list {
   display: none;
+}
+
+
+/* open and close nav menu */
+
+.nav-menu .closeMenu i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-list .mainMenu {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: fixed;
+  background-color: #000;
+  transition: top 1s ease;
+  display: none;
+}
+
+.navbar-list .mainMenu .closeMenu {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.navbar-list .openMenu {
+  display: block;
+}
+
+.mainMenu .nav-item .nav-link {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+
+.navbar-list .mainMenu li a:hover {
+  color: rgb(255, 69, 255);
+}
+
+.closeMenu {
+  display: inline-block;
 }
 
 
@@ -432,11 +487,6 @@ form textarea {
 
 /* transitioning */
 
-body:hover,
-body:focus {
-  background-color: #000;
-}
-
 .nameAni {
   animation-duration: 3s;
   animation-name: slidein;
@@ -518,13 +568,13 @@ body:focus {
   }
 
   .navbar-list {
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: space-between;
   }
 
   .hamburger-menu {
-    display: none;
+    display: none !important;
   }
 
   .name1 {
@@ -611,7 +661,7 @@ body:focus {
 
   .skills-list {
     width: 100%;
-    margin-left: -16%;
+    margin-left: -11%;
   }
 
   .lang-skill {
@@ -630,6 +680,7 @@ body:focus {
     display: flex;
     height: 289px;
     width: 500px;
+    margin-left: 118px;
   }
 
   .language h3,
@@ -923,6 +974,7 @@ body:focus {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 450px;
   }
 
   .hamburger-menu {
@@ -1012,7 +1064,7 @@ body:focus {
 
   .skills-list {
     width: 100%;
-    margin-left: -11%;
+    margin-left: 16%;
   }
 
   .ellipse2 {
@@ -1041,6 +1093,7 @@ body:focus {
   .skillEclips {
     display: flex;
     height: 289px;
+    margin-left: -9%;
   }
 
   .frameworks,
@@ -1072,7 +1125,7 @@ body:focus {
   .workarrow1 {
     display: flex;
     margin-top: 30px;
-    margin-left: 60%;
+    margin-left: 40%;
   }
 
   .workarrow1 i {
