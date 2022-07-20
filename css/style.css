@@ -33,14 +33,17 @@ a {
 
 .nav-container {
   width: 100%;
+  position: fixed;
   padding-top: 20px;
   margin-left: 24px;
+  margin-top: 5%;
 }
 
 .navbar-list {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 5%;
 }
 
 .name1 {
@@ -53,6 +56,95 @@ a {
 }
 
 .hamburger-list {
+  display: none;
+}
+
+
+/* open and close nav menu */
+
+.nav-menu .closeMenu i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.navbar-list .mainMenu {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: center;
+  align-items: initial;
+  background: fixed;
+  background-color: #191765;
+  background-image: url('../images/shape-mobile\ menu-2.svg'), url('../images/shape-mobile\ menu-22.svg');
+  background-position: left, bottom right;
+  background-repeat: no-repeat;
+  transition: top 1s ease;
+}
+
+.mainMenu .frist {
+  margin-top: -332px;
+}
+
+.navbar-list .mainMenu .closeMenu {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 35px;
+}
+
+.navbar-list .openMenu {
+  display: block;
+}
+
+.mainMenu .nav-item .nav-link {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  transition: 0.2s ease;
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 8%;
+  z-index: 10px;
+}
+
+.navbar-list .mainMenu li a:hover {
+  color: rgb(255, 69, 255);
+}
+
+.closeMenu {
+  display: inline-block;
+}
+
+.navSpanArrow1,
+.navSpanArrow2,
+.navSpanArrow3 {
+  color: #acb7c3;
+  font-size: 20px;
+  font-weight: 400px;
+  align-items: flex-end;
+}
+
+.navSpanArrow1 {
+  padding-left: 8rem;
+}
+
+.navSpanArrow2 {
+  padding-left: 11rem;
+}
+
+.navSpanArrow3 {
+  padding-left: 9rem;
+}
+
+.navSpanArrow4 {
   display: none;
 }
 
@@ -432,11 +524,6 @@ form textarea {
 
 /* transitioning */
 
-body:hover,
-body:focus {
-  background-color: #000;
-}
-
 .nameAni {
   animation-duration: 3s;
   animation-name: slidein;
@@ -514,33 +601,53 @@ body:focus {
   .nav-container {
     width: 100%;
     padding-top: 20px;
-    margin-left: 24px;
+    margin-left: 0;
+    margin-top: 10px;
   }
 
   .navbar-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: -43px 5%;
   }
 
-  .hamburger-menu {
+  .navbar-list .openMenu,
+  .navbar-list .mainMenu .closeMenu i,
+  .navSpanArrow1,
+  .navSpanArrow2,
+  .navSpanArrow3 {
     display: none;
   }
 
+  .navSpanArrow4 {
+    display: block;
+  }
+
   .name1 {
-    margin-top: 10px;
+    margin-top: 4%;
     margin-left: 10%;
   }
 
-  .hamburger-list {
-    width: 464px;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 32px;
-    margin-right: 45px;
+  .mainMenu .frist {
+    margin-top: 0;
   }
 
-  .hamburger-list li {
+  .navbar-list .mainMenu {
+    width: 464px;
+    height: auto;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+    top: 0;
+    left: unset;
+    margin-top: 32px;
+    margin-right: 45px;
+    align-items: center;
+    position: unset;
+  }
+
+  .navbar-list .mainMenu .nav-item {
     font-size: 15px;
     font-weight: 500;
     align-self: center;
@@ -611,7 +718,7 @@ body:focus {
 
   .skills-list {
     width: 100%;
-    margin-left: -16%;
+    margin-left: -11%;
   }
 
   .lang-skill {
@@ -630,6 +737,7 @@ body:focus {
     display: flex;
     height: 289px;
     width: 500px;
+    margin-left: 118px;
   }
 
   .language h3,
@@ -671,7 +779,7 @@ body:focus {
   .workarrow1 {
     display: flex;
     margin-top: 30px;
-    margin-left: 42%;
+    margin-left: 17%;
   }
 
   .workarrow1 i {
@@ -917,15 +1025,17 @@ body:focus {
     width: 100%;
     padding-top: 20px;
     margin-left: 24px;
+    margin-top: 0;
   }
 
   .navbar-list {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: -36px 5%;
   }
 
-  .hamburger-menu {
+  .navbar-list .openMenu {
     display: none;
   }
 
@@ -936,6 +1046,7 @@ body:focus {
 
   .hamburger-list {
     display: flex;
+    float: row;
     justify-content: space-around;
     margin-top: 32px;
     margin-right: -185px;
@@ -949,6 +1060,10 @@ body:focus {
 
   .hamburger-list li:last-child {
     margin-right: 20%;
+  }
+
+  .navSpanArrow4 {
+    display: block;
   }
 
   /* Section 1 */
@@ -1012,7 +1127,7 @@ body:focus {
 
   .skills-list {
     width: 100%;
-    margin-left: -11%;
+    margin-left: 16%;
   }
 
   .ellipse2 {
@@ -1041,6 +1156,7 @@ body:focus {
   .skillEclips {
     display: flex;
     height: 289px;
+    margin-left: -9%;
   }
 
   .frameworks,
@@ -1072,7 +1188,7 @@ body:focus {
   .workarrow1 {
     display: flex;
     margin-top: 30px;
-    margin-left: 60%;
+    margin-left: 22%;
   }
 
   .workarrow1 i {
