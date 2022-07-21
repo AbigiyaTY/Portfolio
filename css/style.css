@@ -525,6 +525,10 @@ form textarea {
     color: white;
 }
 
+.displayWork {
+    display: none;
+}
+
 
 /* transitioning */
 
@@ -579,6 +583,9 @@ form textarea {
     .worklink {
         display: none;
     }
+    .displayWork {
+        display: none;
+    }
 }
 
 @media only screen and (min-width: 760px) {
@@ -593,6 +600,9 @@ form textarea {
     }
     body {
         width: 960px;
+    }
+    .displayWork {
+        display: none;
     }
     /* Header section */
     .nav-container {
@@ -943,6 +953,9 @@ form textarea {
     }
     body {
         width: 960px;
+    }
+    .displayWork {
+        display: none;
     }
     /* Header section */
     .nav-container {

@@ -5,7 +5,6 @@ const navitem = document.querySelectorAll('.mainMenu .nav-item .nav-link');
 const overlay = document.querySelector('#ovelay');
 const openModalButton = document.querySelectorAll('[data-modal-target]');
 
-
 function show() {
     mainMenu.style.display = 'flex';
     mainMenu.style.top = '0';
@@ -24,42 +23,46 @@ navitem.forEach((item) => {
 });
 
 const mobileModalContent = [{
-    displayHeader: 'Multi-post stories',
+    title: 'Multi-post stories',
     closeWork: '<i class="closeWork fa fa-times"></i>',
-    displayImgSmall: './images/Snapshoot-Portfolio.png',
-    displayP: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
+    displayImgSmall: './images/modal-mobile.png',
+    descriptionMobile: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
     diplayUl: ['|', 'html', '|', 'Ruby on rails', '|', 'css'],
-}];
+}]
 
 const desktopModalContent = [{
-    displayHeader: 'Multi-post stories',
+    title: 'Multi-post stories',
     closeWork: '<i class="closeWork fa fa-times"></i>',
     displayImgLarge: './images/Snapshoot-Portfolio-lg.png',
-    displayP: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
+    descriptionDesktop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.',
     diplayUl: ['|', 'html', '|', 'Ruby on rails', '|', 'css', '|', 'Github'],
 }];
 
 const displayWork = document.getElementById('displayWork');
-const langArray = mobileModalContent.diplayUl.join('  ');
-displayWork.innerHTML = `<h2 class="displayHeader">${desktopModalContent.closeWork}</h2>
-  <span> <a onclick="closePopupModal()" href="" class="close-popup"><img class="closeWork" src="${desktopModalContent.closeWork}" alt="Close icon Mobile modal" /></a></span>
-  <img class="displayImg large" src="${desktopModalContent.displayImgLarge}" alt="Project Image on desktop device">
-  <p class="displayP">${desktopModalContent.displayP}</p>
-  <ul class="diplayUl">${langArray}</ul>
-  <img class="displayImg small e" src="${mobileModalContent.displayImgSmall}" alt="Project Image on mobile device">
-  <p class="mobile-modal-text">${mobileModalContent.displayP}</p>
-  <button class="live-button" type="button">See Live <i class="disFA fa fa-chevron-right"></i></button>
-  <button class="src-button" type="button">See Source <i class="disFA fa fa-github"></i></button>
-`;
 
-desktopModalContent.displayHeader = 'Multi-post stories';
-desktopModalContent.displayP = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.';
-desktopModalContent.displayImgLarge = './images/Snapshoot-Portfolio-lg.png';
-desktopModalContent.closeWork = '<i class="closeWork fa fa-times"></i>';
-desktopModalContent.diplayUl = ['|', 'html', '|', 'Ruby on rails', '|', 'css', '|', 'Github'];
-mobileModalContent.displayP = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.';
-mobileModalContent.displayImgSmall = './images/modal-mobile.png';
+mobileModalContent.displayImgSmall = './images/Snapshoot-Portfolio.png';
+mobileModalContent.descriptionMobile = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.';
 mobileModalContent.diplayUl = ['|', 'html', '|', 'Ruby on rails', '|', 'css'];
+desktopModalContent.title = 'Multi-post stories';
+desktopModalContent.closeWork = '<i class="closeWork fa fa-times"></i>';
+desktopModalContent.displayImgLarge = './images/Snapshoot-Portfolio-lg.png';
+desktopModalContent.descriptionDesktop = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting  ever since the 1500s, when an unknown printer took a galley of type veris lapoa todoe.';
+desktopModalContent.diplayUl = ['|', 'html', '|', 'Ruby on rails', '|', 'css', '|', 'Github', '|'];
+
+const langArray = mobileModalContent.diplayUl.join('  ');
+const langArrayLg = desktopModalContent.diplayUl.join('  ');
+
+displayWork.innerHTML = `<section class="displayWork"><div class="headerDis"><h2 class="displayHeader">${desktopModalContent.title}</h2><span> <a onclick="closePopupModal()" href="" class="closeWork">${desktopModalContent.closeWork}</a></span></div>
+  <img class="displayImg large" src="${desktopModalContent.displayImgLarge}" alt="Project Image on desktop device">
+  <p class="displayP">${desktopModalContent.descriptionDesktop}</p>
+  <ul class="diplayUl">${langArray}</ul>
+  <ul class="diplayUlLG">${langArrayLg}</ul>
+  <img class="displayImg small" src="${mobileModalContent.displayImgSmall}" alt="Project Image on mobile device">
+<div class="footerDis">
+  <button class="buttonDis buttonOne" type="button">See Live <i class="disFA fa fa-chevron-right"></i></button>
+  <button class="buttonDis buttonTwo" type="button">See Source <i class="disFA fa fa-github"></i></button>
+</div>    </section>
+`;
 
 function openModal(modal) {
     if (modal == null) return;
@@ -86,3 +89,9 @@ overlay.addEventListener('click', () => {
         closeModal(modal);
     });
 });
+
+function closing() {
+    closeModal.style.display = 'none';
+}
+
+closing();
