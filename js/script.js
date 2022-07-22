@@ -52,7 +52,7 @@ desktopModalContent.diplayUl = ['|   ', 'html   ', '|   ', 'Ruby on rails   ', '
 const langArray = mobileModalContent.diplayUl.join('  ');
 const langArrayLg = desktopModalContent.diplayUl.join('  ');
 
-displayWork.innerHTML = `<div class="headerDis"><h2 class="displayHeader">${desktopModalContent.title}</h2><span> <a onclick="closePopupModal()" href="" class="closeWork">${desktopModalContent.closeWork}</a></span></div>
+displayWork.innerHTML = `<div class="headerDis"><h2 class="displayHeader">${desktopModalContent.title}</h2><span> <a onclick="closePopupModal()" href="" id='fixed' class="closeWork">${desktopModalContent.closeWork}</a></span></div>
 <img class="displayImg large" src="${desktopModalContent.displayImgLarge}" alt="Project Image on desktop device">
 <img class="displayImg small" src="${mobileModalContent.displayImgSmall}" alt="Project Image on mobile device">
 <p class="displayP">${desktopModalContent.descriptionDesktop}</p>
@@ -80,7 +80,9 @@ function closeModal(modal) {
   if (modal == null) return;
   modal.classList.remove('active');
   overlay.classList.remove('active');
+  closeModal.style.display = 'none';
 }
+closeModal();
 
 overlay.addEventListener('click', () => {
   const modals = document.querySelectorAll('.displayWork.active');
@@ -88,9 +90,3 @@ overlay.addEventListener('click', () => {
     closeModal(modal);
   });
 });
-
-function closing() {
-  closeModal.style.display = 'none';
-}
-
-closing();
