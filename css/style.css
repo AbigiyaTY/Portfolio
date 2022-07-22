@@ -568,7 +568,6 @@ a {
   width: 327px;
   display: flex;
   flex-direction: column;
-  margin: 0 24px;
 }
 
 .contact-title {
@@ -946,6 +945,7 @@ form textarea {
   /* section 2 work display */
   .work {
     width: 100%;
+    margin-bottom: 300px;
   }
 
   .work-title {
@@ -1077,7 +1077,6 @@ form textarea {
   /* section 4 let's chat section */
   .Contact-Us {
     width: 100%;
-    margin-top: 300px;
     align-items: center;
   }
 
@@ -1559,7 +1558,6 @@ form textarea {
   /* section 4 let's chat section */
   .Contact-Us {
     width: 100%;
-    margin-top: 300px;
     margin-left: 5%;
   }
 
