@@ -18,6 +18,7 @@
     <!-- javascript -->
     <script defer src="./js/menuDisplay.js"></script>
     <script defer src="./js/poppup.js"></script>
+    <script defer src="./js/validation-form.js"></script>
 </head>
 
 <body>
@@ -289,10 +290,11 @@
                     If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it
                 </p>
             </div>
-            <form id="form1" action="https://formspree.io/f/xbjwvdqb" method="post">
+            <form id="contact-form" action="https://formspree.io/f/xbjwvdqb" method="post">
                 <input type="text" id="name" name="name" maxlength="30" placeholder="Text input" required />
                 <br />
                 <br />
+                <p id="errorDisplay"></p>
                 <input type="email" id="email" name="email" placeholder="jeremy@gmail.com" required />
                 <br />
                 <br />
