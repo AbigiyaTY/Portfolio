@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <!-- javascript -->
     <script defer src="./js/menuDisplay.js"></script>
-    <script defer src="./js/popup.js"></script>
+    <script defer src="./js/poppup.js"></script>
 </head>
 
 <body>
@@ -289,11 +289,12 @@
                     If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it
                 </p>
             </div>
-            <form action="https://formspree.io/f/xbjwvdqb" method="post">
+            <form id="form1" action="https://formspree.io/f/xbjwvdqb" method="post">
                 <input type="text" id="name" name="name" maxlength="30" placeholder="Text input" required />
                 <br />
                 <br />
-                <input type="email" id="email" name="email" placeholder="jeremy@gmail.com" required /><br />
+                <input type="email" id="email" name="email" placeholder="jeremy@gmail.com" required />
+                <br />
                 <br />
                 <textarea name="comments" id="comments" placeholder="Enter text here" maxlength="500" required></textarea>
                 <br />
@@ -303,7 +304,7 @@
         </div>
     </section>
     <footer>
-        <div id="contact" class="contact">
+        <div class="contact">
             <div class="lines"></div>
             <div class="rowDS">
                 <div class="contact-list-li">

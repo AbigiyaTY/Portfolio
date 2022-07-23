@@ -53,6 +53,7 @@ a {
   background: #ffffff29;
   border: 1px solid #fff;
   box-shadow: 1px 48px 48px #252f8914;
+  overflow: auto;
 }
 
 .displayWork.active {
@@ -72,6 +73,7 @@ a {
   background-image: url('../images/Ellipse-1.svg'), url('../images/Ellipse-2.svg');
   background-position: left, bottom right;
   background-repeat: no-repeat;
+  overflow: auto;
 }
 
 #overlay.active {
@@ -81,21 +83,24 @@ a {
   height: 100%;
 }
 
+body.inActive {
+  display: block;
+}
+
 .headerDis {
   display: flex;
   width: 80%;
-  justify-content: space-around;
+  margin-left: 9%;
   margin-bottom: 10%;
 }
 
 .headerDis i {
   font-size: 147%;
-  margin-top: 144%;
 }
 
 .closeWork {
-  margin-top: 45%;
-  margin-left: 169%;
+  margin-top: 8%;
+  margin-left: 30%;
 }
 
 .displayHeader {
@@ -1158,6 +1163,11 @@ form textarea {
     margin-left: 215%;
   }
 
+  .closeWork {
+    margin-top: 0%;
+    margin-left: 29%;
+  }
+
   .small {
     display: none;
   }
@@ -1631,7 +1641,12 @@ form textarea {
   }
 
   .headerDis {
-    margin-bottom: 4%;
+    margin-bottom: 5%;
+  }
+
+  .closeWork {
+    margin-top: 3%;
+    margin-left: 50%;
   }
 
   .large {
