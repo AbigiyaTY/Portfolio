@@ -16,7 +16,8 @@
     <!-- Custom Styles -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- javascript -->
-    <script defer src="./js/script.js"></script>
+    <script defer src="./js/menuDisplay.js"></script>
+    <script defer src="./js/poppup.js"></script>
 </head>
 
 <body>
@@ -177,11 +178,17 @@
                     </ul>
                 </div>
                 <div class="grid-item5">
-                    <button class="buttonGR" type="button">See Project</button>
+                    <button data-modal-target="#displayWork" class="buttonGR" type="button">
+              See Project
+            </button>
                 </div>
             </div>
-            <button class="button1" type="button">See Project</button>
+            <button data-modal-target="#displayWork" class="button1" type="button">
+          See Project
+        </button>
         </div>
+        <div id="displayWork" class="displayWork"></div>
+        <div id="overlay"></div>
         <div class="work-portofolio-2">
             <div class="grid-container grid-container2">
                 <div class="grid-item1 ml"></div>
@@ -202,10 +209,14 @@
                     </ul>
                 </div>
                 <div class="grid-item5">
-                    <button class="buttonGR" type="button">See Project</button>
+                    <button data-modal-target="#displayWork" class="buttonGR" type="button">
+              See Project
+            </button>
                 </div>
             </div>
-            <button class="button1" type="button">See Project</button>
+            <button data-modal-target="#displayWork" class="button1" type="button">
+          See Project
+        </button>
         </div>
         <div class="work-portofolio-3">
             <div class="grid-container grid-container1 grid-container3">
@@ -227,10 +238,14 @@
                     </ul>
                 </div>
                 <div class="grid-item5">
-                    <button class="buttonGR" type="button">See Project</button>
+                    <button data-modal-target="#displayWork" class="buttonGR" type="button">
+              See Project
+            </button>
                 </div>
             </div>
-            <button class="button1" type="button">See Project</button>
+            <button data-modal-target="#displayWork" class="button1" type="button">
+          See Project
+        </button>
         </div>
         <div class="work-portofolio-4">
             <div class="grid-container grid-container2 grid-container4">
@@ -252,12 +267,17 @@
                     </ul>
                 </div>
                 <div class="grid-item5">
-                    <button class="buttonGR" type="button">See Project</button>
+                    <button data-modal-target="#displayWork" class="buttonGR" type="button">
+              See Project
+            </button>
                 </div>
             </div>
-            <button class="button1" type="button">See Project</button>
+            <button data-modal-target="#displayWork" class="button1" type="button">
+          See Project
+        </button>
         </div>
     </section>
+
     <section>
         <div id="Contact-Us" class="Contact-Us">
             <div class="contact-title">
@@ -269,11 +289,12 @@
                     If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I'd love to help with it
                 </p>
             </div>
-            <form action="https://formspree.io/f/xbjwvdqb" method="post">
+            <form id="form1" action="https://formspree.io/f/xbjwvdqb" method="post">
                 <input type="text" id="name" name="name" maxlength="30" placeholder="Text input" required />
                 <br />
                 <br />
-                <input type="email" id="email" name="email" placeholder="jeremy@gmail.com" required /><br />
+                <input type="email" id="email" name="email" placeholder="jeremy@gmail.com" required />
+                <br />
                 <br />
                 <textarea name="comments" id="comments" placeholder="Enter text here" maxlength="500" required></textarea>
                 <br />
@@ -283,7 +304,7 @@
         </div>
     </section>
     <footer>
-        <div id="contact" class="contact">
+        <div class="contact">
             <div class="lines"></div>
             <div class="rowDS">
                 <div class="contact-list-li">

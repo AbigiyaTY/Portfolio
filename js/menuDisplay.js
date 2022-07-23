@@ -7,11 +7,11 @@ function show() {
   mainMenu.style.display = 'flex';
   mainMenu.style.top = '0';
 }
+openMenu.addEventListener('click', show);
 
 function close() {
   mainMenu.style.top = '-100%';
 }
-openMenu.addEventListener('click', show);
 closeMenu.addEventListener('click', close);
 
 navitem.forEach((item) => {
