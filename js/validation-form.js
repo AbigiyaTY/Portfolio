@@ -8,7 +8,7 @@ form.addEventListener('submit', (e) => {
         e.preventDefault();
         errorDisplay.style.visibility = 'visible';
         errorDisplay.classList.add('error-message');
-        errorDisplay.textContent = '*Your email address should be all in lowercase';
+        errorDisplay.textContent = '*Your email address should be all be in lowercase';
     } else {
         errorDisplay.style.visibility = 'hidden';
     }
