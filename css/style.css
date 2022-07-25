@@ -711,6 +711,9 @@ body.inActive {
     color: red;
 }
 
+
+/* validtion form end */
+
 @media only screen and (min-width: 370px) and (max-width: 760px) {
     html,
     body {
