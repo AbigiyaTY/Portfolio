@@ -1683,5 +1683,13 @@ form textarea {
     margin-top: 2%;
   }
 
+  .buttonOne {
+    width: 21%;
+  }
+
+  .buttonTwo {
+    width: 18%;
+  }
+
   /* POPup window close */
 }
