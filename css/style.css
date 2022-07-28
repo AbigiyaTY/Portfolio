@@ -259,7 +259,7 @@ body.inActive {
   font-size: 24px;
   font-weight: 500;
   margin-left: 8%;
-  z-index: 10px;
+  z-index: 10;
 }
 
 .navbar-list .mainMenu li a:hover {
@@ -275,7 +275,7 @@ body.inActive {
 .navSpanArrow3 {
   color: #acb7c3;
   font-size: 20px;
-  font-weight: 400px;
+  font-weight: 400;
   align-items: flex-end;
 }
 
@@ -890,14 +890,12 @@ form textarea {
   .skills h3,
   .frameworks h3 {
     font-size: 15px;
-    justify-self: 5%;
   }
 
   .language ul li,
   .skills ul li,
   .frameworks ul li {
     font-size: 18px;
-    justify-self: 5%;
   }
 
   .ellipse2 {
@@ -1269,7 +1267,6 @@ form textarea {
 
   .hamburger-list {
     display: flex;
-    float: row;
     justify-content: space-around;
     margin-top: 32px;
     margin-right: -185px;
