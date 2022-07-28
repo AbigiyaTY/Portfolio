@@ -150,14 +150,13 @@ body.inActive {
 
 .buttonOne {
   width: 22%;
-  margin-left: 40%;
-  margin-right: 28%;
+  margin-left: 50%;
   margin-bottom: 5%;
 }
 
 .buttonTwo {
-  width: 25%;
-  margin-left: 39%;
+  width: 26%;
+  margin-left: 48%;
   margin-right: 0;
   margin-bottom: 10%;
 }
@@ -1684,7 +1683,8 @@ form textarea {
   }
 
   .buttonOne {
-    width: 21%;
+    width: 17%;
+    margin-left: 3%;
   }
 
   .buttonTwo {
