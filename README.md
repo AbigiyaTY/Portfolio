@@ -6,7 +6,7 @@
     CSS
     Javascript
 ## Live Demo
-https://abigiyaty.github.io/Portofolio-/
+https://abigiyaty.github.io/Portfolio/
 
 ## Getting Started
 - Clone the project by your code editor
