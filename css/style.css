@@ -309,6 +309,7 @@ a {
 .work-portofolio-4 {
   width: 375px;
   background-repeat: no-repeat;
+  height: 686px;
 }
 
 .work-portofolio-1 {
@@ -329,6 +330,7 @@ a {
 .work-portofolio-4 {
   background-image: url('../images/Ellipse-6.svg');
   background-position: right;
+  margin-bottom: 60px;
 }
 
 .grid-container {
@@ -399,8 +401,9 @@ a {
 }
 
 .button1 {
-  margin-left: 24px;
-  margin-bottom: 40px;
+  /* margin-left: 24px; */
+  margin-bottom: 40px !important;
+  margin-top: 40px !important;
 }
 
 .button2 {
@@ -412,10 +415,6 @@ a {
 .button2:hover,
 .button1:hover {
   background-color: #555;
-}
-
-.buttonGR {
-  display: none;
 }
 
 
@@ -728,10 +727,6 @@ body.inActive {
     width: 480px;
   }
 
-  .buttonGR {
-    display: none;
-  }
-
   .worklink {
     display: none;
   }
@@ -1036,14 +1031,17 @@ body.inActive {
     margin-top: 150px;
   }
 
+  .grid-item4 ul {
+    margin-top: 25px;
+  }
+
   .grid-item5 {
     grid-area: item5;
   }
 
-  .button1 {
-    display: none;
-  }
-
+  /* .button1 {
+        display: none;
+    } */
   .buttonGR {
     display: block;
     padding: 20px;
@@ -1061,12 +1059,14 @@ body.inActive {
     width: 760px;
     background-position: left;
     background-size: contain;
+    height: 500px;
   }
 
   .work-portofolio-2 {
     background-image: url('../images/lg-img4.svg');
     background-repeat: no-repeat;
     width: 960px;
+    height: 500px;
   }
 
   .work-portofolio-3 {
@@ -1075,6 +1075,7 @@ body.inActive {
     background-position: left;
     background-size: auto;
     width: 760px;
+    height: 400px;
   }
 
   .work-portofolio-4 {
@@ -1082,8 +1083,8 @@ body.inActive {
     background-repeat: no-repeat;
     background-size: contain;
     width: 960px;
-    height: 370px;
-    padding-top: 115px;
+    height: 355px;
+    padding-top: 97px;
     margin-top: 0;
   }
 
@@ -1510,6 +1511,10 @@ body.inActive {
     margin-top: 40px;
   }
 
+  .grid-item4 ul {
+    margin-top: 45px;
+  }
+
   .grid-item5 {
     grid-area: item5;
     margin-left: 4%;
@@ -1521,10 +1526,6 @@ body.inActive {
 
   .mr {
     margin-right: 4%;
-  }
-
-  .button1 {
-    display: none;
   }
 
   .buttonGR {
