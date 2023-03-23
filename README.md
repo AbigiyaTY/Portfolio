@@ -1,4 +1,6 @@
-# Abigiya Portofolio Website
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
+# Portofolio Website
 > Bulid single portofolio html file which is styled by css and made responsive by javascript.
 
 ## Built With
@@ -34,4 +36,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](https://www.mit.edu/~amini/LICENSE.md) licensed.
+This project is [MIT](/LICENSE.md) licensed.
