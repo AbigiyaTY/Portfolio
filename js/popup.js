@@ -7,7 +7,7 @@ const button4 = document.getElementById('button4');
 
 const popup = [{
   id: 1,
-  title: 'Multi-post stories1',
+  title: 'Multi-post stories 1',
   closeWork: 'x',
   smallImg: './images/Snapshoot-Portfolio.png',
   largImg: './images/Snapshoot-Portfolio-lg.png',
@@ -18,7 +18,7 @@ const popup = [{
   buttonTwo: 'https://github.com/AbigiyaTY/Portofolio-',
 }, {
   id: 2,
-  title: 'Multi-post stories2',
+  title: 'Multi-post stories 2',
   closeWork: 'x',
   smallImg: './images/Snapshoot-Portfolio.png',
   largImg: './images/Snapshoot-Portfolio-lg.png',
@@ -29,7 +29,7 @@ const popup = [{
   buttonTwo: 'https://github.com/AbigiyaTY/Portofolio-',
 }, {
   id: 3,
-  title: 'Multi-post stories3',
+  title: 'Multi-post stories 3',
   closeWork: 'x',
   smallImg: './images/Snapshoot-Portfolio.png',
   largImg: './images/Snapshoot-Portfolio-lg.png',
@@ -40,7 +40,7 @@ const popup = [{
   buttonTwo: 'https://github.com/AbigiyaTY/Portofolio-',
 }, {
   id: 4,
-  title: 'Multi-post stories4',
+  title: 'Multi-post stories 4',
   closeWork: 'x',
   smallImg: './images/Snapshoot-Portfolio.png',
   largImg: './images/Snapshoot-Portfolio-lg.png',
