@@ -4,9 +4,9 @@
 > Bulid single portofolio html file which is styled by css and made responsive by javascript.
 
 ## Built With
-    HTML
-    CSS
-    Javascript
+- Major languages: HTML, CSS, JavaScript.
+- Frameworks: Bootstrap.
+  
 ## Live Demo
 https://abigiyaty.github.io/Portfolio/
 
